@@ -1,0 +1,26 @@
+In this question we have to make the both row and cloumn of the matrix zero if there is a zero present in that row or column.
+So in order to solve this problem we have to first make a dummmy rows and column matrix we consider the first row and the column as the dummy matrix so now we update 
+the value in the matrix as we find a zero in the matrix. 
+Then we transverse the matrix in reverse ordeer so that the different part of the matrix is updated first then the dummy rows and the column.
+
+Here is the code for the following.
+
+class Solution {
+public:
+    void setZeroes(vector<vector<int>>& matrix) {
+        int col=1;
+        int rows=matrix.size();
+        int cols=matrix[0].size();
+        for(int i=0;i<rows;i++){
+            if(matrix[i][0]== 0)col=0;
+            for(int j=1;j<cols;j++)
+                if(matrix[i][j]==0)
+                    matrix[i][0]=matrix[0][j]=0;
+              }
+            for(int i=rows-1;i>=0;i--){
+                for(int j=cols-1;j>=1;j--)
+ if(matrix[i][0]==0   || matrix[0][j]==0)  matrix [i][j]=0;
+ if(col==0)matrix [i][0]=0;
+            }  
+    }
+};
