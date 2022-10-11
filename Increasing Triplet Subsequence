@@ -1,0 +1,20 @@
+Given an integer array nums, return true if there exists a triple of indices (i, j, k) such that i < j < k and nums[i] < nums[j] < nums[k]. If no such indices exists, return false.
+
+ 
+solution:-
+
+class Solution {
+public:
+    bool increasingTriplet(vector<int>& nums) {
+        int First = INT_MAX, Second = INT_MAX;
+        if(nums.size()<3)   return false;
+        for(int& num : nums){
+            if(num <= First)  First = num;
+            else if(num <= Second)  Second = num;
+            else    return true;
+        }
+        return false;
+    }
+};
+
+    
