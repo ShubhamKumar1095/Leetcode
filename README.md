@@ -1,5 +1,5 @@
 # Leetcode
-This is my private repository of my coding on the Leetcode Platform. If you want to ascess this Repo please contact the owner of the repo.
+This is my repository of my coding on the Leetcode Platform.
 Thank you .
 Uchiha Itachi 
 Amaterasu
