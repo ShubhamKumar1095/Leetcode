@@ -12,6 +12,9 @@
 class Solution {
 public:
     int rangeSumBST(TreeNode* root, int low, int high) {
+          ios_base::sync_with_stdio(false);
+        cin.tie(nullptr);
+        cout.tie(nullptr);
         if(!root)
         return 0;
        int sum = 0;
