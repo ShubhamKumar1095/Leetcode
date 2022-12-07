@@ -11,7 +11,10 @@
 class Solution {
 public:
     ListNode* rotateRight(ListNode* head, int k) {
-      if(head==NULL||head->next==NULL||k==0) return head;
+     
+ios_base::sync_with_stdio(false);  
+cin.tie(NULL);
+        if(head==NULL||head->next==NULL||k==0) return head;
         ListNode *temp=head;
         int count=1;
         while(temp->next!=NULL){
